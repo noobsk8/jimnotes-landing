@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JimNotes - What If Your Workout Notes Could Answer Questions?</title>
+    <meta name="description" content="Meet Jim, your AI workout buddy who remembers every rep. Ask about your PRs, streaks, or any workout - he knows it all.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💪</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Meta Tags -->
+    <meta property="og:title" content="JimNotes - What If Your Workout Notes Could Answer Questions?">
+    <meta property="og:description" content="Meet Jim, your AI workout buddy who remembers every rep. Ask about your PRs, streaks, or any workout - he knows it all.">
+    <meta property="og:image" content="assets/screenshots/jimnotes-main-chat.mp4">
+    <meta property="og:url" content="https://jimnotes.com">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    What If Your Workout Notes Could Answer Questions?
+                </h1>
+                <h2 class="hero-subtitle">
+                    Say it. Type it. Jim logs it.
+                </h2>
+                
+                <div class="app-showcase">
+                    <div class="showcase-intro">
+                        <h3>See JimNotes in Action</h3>
+                        <p>Real screenshots from the actual app</p>
+                    </div>
+                    
+                    <div class="screenshot-gallery">
+                        <div class="screenshot-item">
+                            <div class="screenshot-frame">
+                                <video autoplay muted loop playsinline class="demo-video">
+                                    <source src="assets/screenshots/jimnotes-main-chat.mp4" type="video/mp4">
+                                    Your browser doesn't support video playback.
+                                </video>
+                            </div>
+                            <div class="screenshot-caption">
+                                <h4>💬 Chat with Jim</h4>
+                                <p>Type naturally, get instant AI parsing and responses</p>
+                            </div>
+                        </div>
+                        
+                        <div class="screenshot-item">
+                            <div class="screenshot-frame">
+                                <video autoplay muted loop playsinline class="demo-video">
+                                    <source src="assets/videos/After.mp4" type="video/mp4">
+                                    Your browser doesn't support video playback.
+                                </video>
+                            </div>
+                            <div class="screenshot-caption">
+                                <h4>🎬 JimNotes in Action</h4>
+                                <p>Watch how easy it is to log and query your workouts</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-preview">
+                        <h3 class="problem-preview-title">Sound Familiar?</h3>
+                        
+                        <div class="problem-scenario-mini">
+                            <div class="scenario-left">
+                                <div class="fake-notes-small">
+                                    <div class="notes-header-tiny">📝 Workout Notes</div>
+                                    <div class="notes-text-small">
+                                        <p>Bench press 135x8<br>
+                                        Deadlift 225x5<br>
+                                        Squats 185x10</p>
+                                        
+                                        <p>Tuesday workout:<br>
+                                        Bench 140x8 (new PR?)<br>
+                                        DL 225x5 again...</p>
+                                        
+                                        <p>Friday:<br>
+                                        Bench - what weight last time?<br>
+                                        Need to check progress...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="scenario-right">
+                                <div class="thought-bubbles-small">
+                                    <div class="thought-bubble-small">
+                                        <span>"Was 140 actually a PR?"</span>
+                                    </div>
+                                    <div class="thought-bubble-small">
+                                        <span>"Am I getting stronger?"</span>
+                                    </div>
+                                    <div class="thought-bubble-small">
+                                        <span>"This is getting messy..."</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="problem-statement-small">
+                            <p><strong>If you're logging workouts in Notes App, you're doing the hard part.</strong></p>
+                            <p>You're just missing the benefits.</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <p class="hero-tagline">
+                    Type like Notes App. Ask questions like ChatGPT. Get answers about your fitness.
+                </p>
+                
+                <div class="cta-buttons">
+                    <a href="#download" class="btn btn-primary">Try JimNotes Free</a>
+                    <a href="#features" class="btn btn-secondary">See Features</a>
+                </div>
+                
+                <div class="hero-features">
+                    <span class="feature-item">✅ Works like Notes App</span>
+                    <span class="feature-item">✅ Apple Watch Integration</span>
+                    <span class="feature-item">✅ AI-Powered Progress Tracking</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Solution Section -->
+    <section class="solution">
+        <div class="container">
+            <h2 class="section-title">Same Input, Better Output</h2>
+            
+            <div class="solution-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Type like Notes App</h3>
+                    <div class="step-demo">
+                        <div class="input-example">"3 sets bench press 135 pounds"</div>
+                    </div>
+                </div>
+                
+                <div class="step-arrow">↓</div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Jim understands instantly</h3>
+                    <div class="step-demo">
+                        <div class="parsed-workout">
+                            <div class="exercise-name">Bench Press</div>
+                            <div class="exercise-details">3 sets × 8 reps @ 135 lbs</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-arrow">↓</div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Automatic progress tracking</h3>
+                    <div class="step-demo">
+                        <div class="mini-chart">
+                            <div class="chart-container">
+                                <div class="chart-bar" style="height: 40%"></div>
+                                <div class="chart-bar" style="height: 60%"></div>
+                                <div class="chart-bar" style="height: 75%"></div>
+                                <div class="chart-bar active" style="height: 90%"></div>
+                                <div class="chart-bar" style="height: 100%"></div>
+                            </div>
+                            <div class="chart-label">Bench Press Progress</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-arrow">↓</div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Ask questions anytime</h3>
+                    <div class="step-demo">
+                        <div class="qa-example">
+                            <div class="question">"What was my best bench press?"</div>
+                            <div class="answer">"Your PR is 140lbs on October 15th"</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Features Comparison -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Everything Notes App Users Actually Want</h2>
+            
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>What You Want</th>
+                            <th>Notes App</th>
+                            <th>JimNotes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Simple typing</td>
+                            <td class="check">✅</td>
+                            <td class="check">✅</td>
+                        </tr>
+                        <tr>
+                            <td>No learning curve</td>
+                            <td class="check">✅</td>
+                            <td class="check">✅</td>
+                        </tr>
+                        <tr>
+                            <td>Find old workouts</td>
+                            <td class="cross">❌</td>
+                            <td class="check">✅ "When did I last squat?"</td>
+                        </tr>
+                        <tr>
+                            <td>See progress</td>
+                            <td class="cross">❌</td>
+                            <td class="check">✅ Automatic charts</td>
+                        </tr>
+                        <tr>
+                            <td>Track PRs</td>
+                            <td class="cross">❌</td>
+                            <td class="check">✅ "New PR!" alerts</td>
+                        </tr>
+                        <tr>
+                            <td>Workout streaks</td>
+                            <td class="cross">❌</td>
+                            <td class="check">✅ Visual calendar</td>
+                        </tr>
+                        <tr>
+                            <td>Export data</td>
+                            <td class="cross">❌</td>
+                            <td class="check">✅ CSV download</td>
+                        </tr>
+                        <tr>
+                            <td>Apple Watch</td>
+                            <td class="cross">❌</td>
+                            <td class="check">✅ Quick logging</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Searchable History</h3>
+                    <p>"When did I last deadlift?" Get instant answers from your entire workout history.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Automatic Charts</h3>
+                    <p>Watch your strength grow over time. No manual tracking or spreadsheets needed.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>PR Tracking</h3>
+                    <p>Never wonder "Was that a new personal record?" again. We track everything automatically.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔥</div>
+                    <h3>Streak Calendar</h3>
+                    <p>See your consistency with visual workout streaks and milestone celebrations.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⌚</div>
+                    <h3>Apple Watch</h3>
+                    <p>Quick logging from your wrist. Select favorites, log instantly, sync automatically.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Data Export</h3>
+                    <p>Your data belongs to you. Export to Excel or Google Sheets anytime you want.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitive Comparison -->
+    <section class="competitive">
+        <div class="container">
+            <h2 class="section-title">Why JimNotes Works Better</h2>
+            <p class="section-subtitle">Most fitness apps are too complicated. We just make Notes App smarter.</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🧠</div>
+                    <h3>AI That Actually Understands</h3>
+                    <p>Powered by OpenAI GPT-3.5-turbo, the same AI behind ChatGPT. Understands natural language like "3 sets bench press 135 pounds" instantly.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">⌚</div>
+                    <h3>True Apple Watch Integration</h3>
+                    <p>Log workouts directly from your wrist. No phone needed during your workout. Syncs automatically when you're done.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>No Monthly Subscription</h3>
+                    <p>Pay only for what you use with our credit system. Much cheaper than $3.99/month apps. Your progress data is always free to view.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔍</div>
+                    <h3>Ask Your Data Questions</h3>
+                    <p>Unique feature: "What was my best bench press?" or "How often did I work out this month?" Get instant answers from your workout history.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">📊</div>
+                    <h3>Automatic Progress Tracking</h3>
+                    <p>See your strength grow over time. Personal records, workout streaks, and progress charts update automatically. No manual data entry.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Zero Learning Curve</h3>
+                    <p>If you can use Notes App, you can use JimNotes. Same simple typing, but with the insights you've always wanted.</p>
+                </div>
+            </div>
+            
+            <div class="competitive-quote">
+                <blockquote>
+                    "Most fitness apps try to replace everything you know about logging workouts.<br><br>
+                    JimNotes just makes Notes App smarter.<br><br>
+                    Same simplicity you love. Better insights than you imagined."
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What People Say</h2>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        "It's great! I don't need to learn how to use it."
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>My Dad</strong>
+                        <span>First-time user</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        "It's what the Apple Notes app is missing - graphs and search context."
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>My Brother</strong>
+                        <span>Apple Notes power user</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        "Pending..."
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>You</strong>
+                        <span>Future user</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Everything you need to know about JimNotes</p>
+            
+            <div class="faq-container">
+                <div class="faq-category">
+                    <h3 class="faq-category-title">🚀 Getting Started</h3>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What is JimNotes and how does it work?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>JimNotes is the first workout tracker that combines natural language AI with Apple Watch integration. Here's how it works:</p>
+                            <ol>
+                                <li><strong>Speak or Type Naturally</strong> - "Did 3 sets bench press at 135 pounds, then ran 2 miles"</li>
+                                <li><strong>AI Processing</strong> - OpenAI GPT-3.5-turbo understands and parses your workout</li>
+                                <li><strong>Smart Organization</strong> - Your workout appears beautifully structured with date and details</li>
+                                <li><strong>Track Your Growth</strong> - View progress charts, streaks, and personal records</li>
+                            </ol>
+                            <p>No forms, no menus - just talk about your workout like you're telling a friend.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Is JimNotes really free to use?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! JimNotes uses a credit-based system instead of expensive monthly subscriptions:</p>
+                            <ul>
+                                <li><strong>New users get free onboarding credits</strong> to try all features</li>
+                                <li><strong>Credits are used for AI-powered features</strong> like workout parsing and history queries</li>
+                                <li><strong>No monthly subscription required</strong> - pay only for what you use</li>
+                                <li><strong>Much more affordable</strong> than competitors charging $3.99+ per month</li>
+                                <li><strong>View your progress and data anytime</strong> - even without credits</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do I need an Apple Watch to use JimNotes?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>No!</strong> JimNotes works perfectly on iPhone alone. However, the Apple Watch adds amazing convenience:</p>
+                            <ul>
+                                <li><strong>Log workouts directly from your wrist</strong> during rest periods</li>
+                                <li><strong>One-tap favorite workout selection</strong></li>
+                                <li><strong>No need to pull out your phone</strong> during workouts</li>
+                                <li><strong>Syncs seamlessly with your iPhone</strong> data</li>
+                            </ul>
+                            <p>The Watch app is a bonus feature that makes JimNotes even more convenient than competitors.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-category">
+                    <h3 class="faq-category-title">💬 AI Features</h3>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How smart is the AI workout parsing?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>JimNotes uses <strong>OpenAI GPT-3.5-turbo</strong> (the same AI that powers ChatGPT) specifically trained for fitness:</p>
+                            <ul>
+                                <li><strong>Understands complex workout descriptions</strong> like "Upper body day: 3x8 bench press 135lbs, 4x10 rows 95lbs, then 20 minutes cycling"</li>
+                                <li><strong>Recognizes 100+ exercise variations</strong> and normalizes them (e.g., "BP" = "Bench Press")</li>
+                                <li><strong>Handles mixed workouts</strong> combining strength training and cardio</li>
+                                <li><strong>Extracts sets, reps, weights, and duration</strong> automatically</li>
+                                <li><strong>90%+ accuracy rate</strong> with common workout descriptions</li>
+                            </ul>
+                            <p><strong>Always review and edit if needed</strong> - the AI is very smart but not perfect!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Can I ask questions about my workout history?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>Yes!</strong> This is a unique JimNotes feature. You can ask:</p>
+                            <ul>
+                                <li>"What was my last workout?"</li>
+                                <li>"Show my bench press progress this month"</li>
+                                <li>"How many times did I work out this week?"</li>
+                                <li>"What's my deadlift personal record?"</li>
+                            </ul>
+                            <p>The AI analyzes your workout history and <strong>answers in natural language</strong>, just like having a personal trainer review your progress.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What if the AI gets my workout wrong?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No problem! JimNotes makes it easy to fix:</p>
+                            <ol>
+                                <li><strong>Review the parsed workout</strong> before saving</li>
+                                <li><strong>Tap "Edit"</strong> to modify any details</li>
+                                <li><strong>Add or remove exercises</strong> as needed</li>
+                                <li><strong>Save the corrected version</strong> - the AI learns from your corrections</li>
+                            </ol>
+                            <p><strong>Pro tip:</strong> The more you use JimNotes, the better it gets at understanding your specific workout style and vocabulary.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-category">
+                    <h3 class="faq-category-title">⌚ Apple Watch</h3>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How does the Apple Watch app work?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>JimNotes on Apple Watch is designed for <strong>quick, convenient workout logging</strong>:</p>
+                            <ol>
+                                <li><strong>Sync favorites from iPhone</strong> - Your saved workouts appear on Watch</li>
+                                <li><strong>Select a favorite during your workout</strong> - One tap to choose</li>
+                                <li><strong>AI processes directly</strong> - No need for iPhone to be nearby</li>
+                                <li><strong>Instant confirmation</strong> - See your workout logged immediately</li>
+                                <li><strong>Syncs back to iPhone</strong> - All data appears in your iPhone app</li>
+                            </ol>
+                            <p>Perfect for logging workouts <strong>without interrupting your flow</strong>.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do I need my iPhone nearby when using the Watch?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>No!</strong> JimNotes Watch app works independently:</p>
+                            <ul>
+                                <li><strong>Calls our servers directly</strong> using your Watch's internet connection</li>
+                                <li><strong>Stores your JWT token locally</strong> for authentication</li>
+                                <li><strong>Syncs data when iPhone is available</strong> but doesn't require it</li>
+                                <li><strong>Unique feature</strong> - most fitness apps require iPhone proximity</li>
+                            </ul>
+                            <p>Perfect for <strong>outdoor workouts</strong> or when you want to <strong>leave your phone in the locker</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-category">
+                    <h3 class="faq-category-title">📊 Progress & Analytics</h3>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How do workout streaks work?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>JimNotes tracks your <strong>consecutive workout days</strong> with precision:</p>
+                            <ul>
+                                <li><strong>Database-driven accuracy</strong> - counts actual logged workouts</li>
+                                <li><strong>Visual indicators</strong> on the calendar (green dots = workout days)</li>
+                                <li><strong>Milestone celebrations</strong> at 1, 7, 14, 30, and 100 days</li>
+                                <li><strong>Current and longest streak</strong> tracking</li>
+                                <li><strong>Smart calculations</strong> - updates instantly when you log workouts</li>
+                            </ul>
+                            <p><strong>Unique feature:</strong> Unlike simple habit trackers, our streaks are based on <strong>actual workout data</strong>, making them more meaningful and motivating.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What charts and analytics are available?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>JimNotes provides comprehensive progress visualization:</p>
+                            <p><strong>Progress Charts:</strong></p>
+                            <ul>
+                                <li><strong>Volume Over Time</strong> - Total weight lifted per day/week/month</li>
+                                <li><strong>Reps Over Time</strong> - Total repetitions completed</li>
+                                <li><strong>Steps Tracking</strong> - Daily steps (integrates with HealthKit)</li>
+                                <li><strong>Personal Records</strong> - Heaviest lifts per exercise</li>
+                            </ul>
+                            <p><strong>Advanced Features:</strong></p>
+                            <ul>
+                                <li><strong>CSV Export</strong> - Download your data for external analysis</li>
+                                <li><strong>Real-time updates</strong> - Charts refresh as you log workouts</li>
+                                <li><strong>Customizable date ranges</strong> - View 7 days, 30 days, or all time</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-category">
+                    <h3 class="faq-category-title">💳 Credits & Billing</h3>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What are credits and how do they work?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>JimNotes uses a <strong>credit-based system</strong> instead of expensive subscriptions:</p>
+                            <ul>
+                                <li><strong>1 credit = 1 AI-powered action</strong> (workout parsing, history queries)</li>
+                                <li><strong>Much more affordable</strong> than $3.99/month competitors</li>
+                                <li><strong>Pay only for what you use</strong> - no monthly commitments</li>
+                                <li><strong>Credits never expire</strong> (unless you delete your account)</li>
+                                <li><strong>Transparent usage</strong> - see your balance anytime in the app</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What happens if I run out of credits?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You can still use most of JimNotes:</p>
+                            <p><strong>Still Works:</strong></p>
+                            <ul>
+                                <li>View all your existing workouts and progress</li>
+                                <li>Browse workout history and charts</li>
+                                <li>Use all analytics and export features</li>
+                                <li>Access favorites and settings</li>
+                            </ul>
+                            <p><strong>Needs Credits:</strong></p>
+                            <ul>
+                                <li>AI workout parsing for new workouts</li>
+                                <li>Asking questions about workout history</li>
+                                <li>Natural language processing features</li>
+                            </ul>
+                            <p><strong>Solution:</strong> More credits available through the app - much cheaper than monthly subscriptions!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-category">
+                    <h3 class="faq-category-title">🔒 Privacy & Security</h3>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Is my workout data private and secure?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>Absolutely!</strong> JimNotes implements enterprise-grade security:</p>
+                            <ul>
+                                <li><strong>Encrypted data</strong> - All information encrypted in transit and at rest</li>
+                                <li><strong>Row Level Security</strong> - Database ensures you only see your own data</li>
+                                <li><strong>JWT authentication</strong> - Secure token-based access</li>
+                                <li><strong>No data sharing</strong> - Your workouts are never sold or shared</li>
+                                <li><strong>Supabase infrastructure</strong> - SOC 2 compliant hosting</li>
+                            </ul>
+                            <p><strong>Your fitness data belongs to you</strong>, period.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Can I delete my account and data?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>Yes!</strong> Complete data control:</p>
+                            <ul>
+                                <li><strong>Settings page</strong> → "Delete Account" - removes everything</li>
+                                <li><strong>Immediate deletion</strong> - Account and data deleted instantly</li>
+                                <li><strong>No hidden retention</strong> - We don't keep deleted data</li>
+                                <li><strong>Export first</strong> - Download your data before deletion if desired</li>
+                                <li><strong>No questions asked</strong> - Delete anytime for any reason</li>
+                            </ul>
+                            <p><strong>Your data, your choice.</strong></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-category">
+                    <h3 class="faq-category-title">🆘 Support</h3>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Still need help?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>Contact Information:</strong></p>
+                            <ul>
+                                <li><strong>General Support:</strong> support@rudeus.io</li>
+                                <li><strong>Privacy Questions:</strong> privacy@rudeus.io</li>
+                                <li><strong>Technical Issues:</strong> support@rudeus.io</li>
+                                <li><strong>Feature Requests:</strong> support@rudeus.io</li>
+                            </ul>
+                            <p><strong>Website:</strong> https://rudeus.io<br>
+                            <strong>Response Time:</strong> Within 24 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download" id="download">
+        <div class="container">
+            <div class="download-content">
+                <h2>Ready to Make Notes App Smarter?</h2>
+                <p>Join thousands of users who've upgraded from Notes App to JimNotes</p>
+                
+                <div class="download-buttons">
+                    <a href="https://apps.apple.com/app/jimnotes" class="btn btn-primary">
+                        📱 Download on App Store
+                    </a>
+                </div>
+                
+                <div class="download-features">
+                    <span>✅ Free to start</span>
+                    <span>✅ No subscription required</span>
+                    <span>✅ Apple Watch included</span>
+                </div>
+                
+                <div class="qr-code">
+                    <div style="width: 120px; height: 120px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; border: 2px solid #d4af37;">
+                        <span style="font-size: 2rem;">📱</span>
+                    </div>
+                    <p>Scan with your iPhone camera</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>JimNotes</h3>
+                    <p>Notes App, but it actually remembers your progress.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#download">Download</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    
+                                            <div class="footer-column">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="/about">About</a></li>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
+                                <li><a href="terms.html">Terms of Service</a></li>
+                                <li><a href="/support">Support</a></li>
+                            </ul>
+                        </div>
+                    
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="mailto:support@rudeus.io">support@rudeus.io</a></li>
+                            <li><a href="https://twitter.com/jimnotes">Twitter</a></li>
+                            <li><a href="https://instagram.com/jimnotes">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rudeus LLC. All rights reserved.</p>
+                <p>Made with 💪 for people who love simple workout logging.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html> 
